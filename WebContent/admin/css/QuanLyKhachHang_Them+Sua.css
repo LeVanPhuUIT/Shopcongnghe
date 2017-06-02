@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+
+.khungchua {
+	width: 350px;
+	height: 450px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: #b18965;
+}
+
+.cottrai, .cotphai {
+	height: 30px;
+	float: left;
+	border: 1px solid #ddd5d5;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+.cottrai {
+	width: 130px;
+}
+
+.cotphai {
+	width: 190px;
+}
+
+.cotphai_input {
+	width: 180px;
+	height: 20px;
+	background-color: #b9d5fc;
+}
+
+.nutbam {
+	width: 70px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: #aec7e1;
+}
+
+.nutcheck {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}

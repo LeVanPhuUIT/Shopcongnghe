@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-16T18:22:25 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="chart1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="981e127f-ea14-4a5f-9366-a829c20a2f80">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="79"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select TenLoaiKH, count(MaKH) as SoLuong
+from khachhang kh, LoaiKhachHang lkh
+where kh.MALOAIKH=lkh.MALOAIKH
+group by lkh.MaLoaiKh,lkh.TENLOAIKH]]>
+	</queryString>
+	<field name="TenLoaiKH" class="java.lang.String"/>
+	<field name="SoLuong" class="java.lang.Integer"/>
+	<variable name="TongKhachHang" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{SoLuong}]]></variableExpression>
+	</variable>
+	<variable name="PhanTramLoaiKH" class="java.math.BigDecimal">
+		<variableExpression><![CDATA[new java.math.Integer($F{SoLuong} / $V{TongKhachHang})]]></variableExpression>
+	</variable>
+	<variable name="variable1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="118">
+			<staticText>
+				<reportElement x="47" y="19" width="246" height="20" uuid="f782e121-36e1-468a-a45e-54278d1fe781"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Shop Thể thao Trúc Quỳnh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="65" width="505" height="27" uuid="98aae39e-fbcf-4447-abac-d02d5ba53a2e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BÁO CÁO TỈ LỆ CÁC LOẠI KHÁCH HÀNG]]></text>
+			</staticText>
+			<line>
+				<reportElement x="57" y="39" width="132" height="1" uuid="4858ca5e-e9ce-4d32-86b0-46ebe1656a13"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="32">
+			<line>
+				<reportElement x="76" y="1" width="424" height="1" uuid="3b3ace45-4a33-4ef4-ba07-07949bdf3ad5"/>
+			</line>
+			<line>
+				<reportElement x="499" y="1" width="1" height="31" uuid="6e9b983a-fda0-45f1-b9c7-b68514613e19"/>
+			</line>
+			<line>
+				<reportElement x="76" y="1" width="1" height="31" uuid="9b0964d9-86fb-4467-b0d9-4349217a4dcd"/>
+			</line>
+			<line>
+				<reportElement x="207" y="2" width="1" height="29" uuid="b1a9fc20-4466-4c19-828f-168ad792d32f"/>
+			</line>
+			<staticText>
+				<reportElement x="208" y="2" width="148" height="30" uuid="dfe308aa-f3d5-4369-900c-c10316825031"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Số lượng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="2" width="130" height="29" uuid="5e2302db-6df8-4f52-b36e-2da62502636b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Loại khách hàng]]></text>
+			</staticText>
+			<line>
+				<reportElement x="356" y="2" width="1" height="29" uuid="d7201c88-ab27-47c0-8ce3-f4fddd8d0d9e"/>
+			</line>
+			<staticText>
+				<reportElement x="357" y="0" width="142" height="30" uuid="8f23b1fa-1cbf-4774-9de2-4a4dcd071b28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Tỉ lệ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="76" y="31" width="424" height="1" uuid="2a695f05-0147-4b6b-b474-62b861ebcda5"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33">
+			<line>
+				<reportElement x="76" y="32" width="424" height="1" uuid="77899c01-cc1c-45ed-9b97-31a6e728a564"/>
+			</line>
+			<line>
+				<reportElement x="499" y="1" width="1" height="32" uuid="c7e529e7-a7e7-4a04-9b8e-9e343946e3f7"/>
+			</line>
+			<line>
+				<reportElement x="76" y="-1" width="1" height="34" uuid="97bc0acb-d071-4e24-9481-9e2a8a575d2f"/>
+			</line>
+			<line>
+				<reportElement x="356" y="1" width="1" height="31" uuid="5b64a35a-b23b-430e-8ff3-4c549804da5a"/>
+			</line>
+			<textField>
+				<reportElement x="208" y="2" width="148" height="30" uuid="35f4a2d6-6591-4141-9714-efcb793c6c3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SoLuong}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="207" y="1" width="1" height="31" uuid="f3a0a2e8-b699-4bdd-83cb-a9628f8d0340"/>
+			</line>
+			<textField>
+				<reportElement x="78" y="1" width="128" height="32" uuid="679ebc60-3f09-4060-9b8e-a9bde3bd2d79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TenLoaiKH}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto">
+				<reportElement x="358" y="2" width="140" height="30" uuid="24bde24b-733e-4c47-99be-ab66642a25c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.Float($F{SoLuong} / $V{TongKhachHang}*100).setScale(0, java.math.RoundingMode.HALF_UP) + "%"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="303">
+			<pieChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="0" width="555" height="303" uuid="ade6ccdf-24a0-4fb0-8942-a7d073f76fe9"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{TenLoaiKH}]]></keyExpression>
+					<valueExpression><![CDATA[$F{SoLuong}]]></valueExpression>
+					<labelExpression><![CDATA[$F{TenLoaiKH}+" - "+$F{SoLuong}+" khách hàng"]]></labelExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+		</band>
+	</summary>
+</jasperReport>

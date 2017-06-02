@@ -1,0 +1,208 @@
+﻿*                       { margin: 0px; padding: 0px; border: none;}
+body                    { background: url(imagesAdmin/bg_admin.jpg) repeat-x left bottom fixed; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height:1.5em; }
+a:link, a:visited		{ text-decoration:none }
+a:hover					{ text-decoration: underline; }
+a img 					{ border: none; }
+p, pre, blockquote		{ margin: 3px 0px; }
+h1, h2, h3, h4, h5, h6	{ text-align:left; }
+h1, h1 a				{ color:#048fee; margin:5px 0px 7px 0px; font-size:22px; }
+h2, h2 a				{ color:#048fee; margin: 5px 0px 5px 3px; font-size: 16px; }
+h3, h3 a				{ color:#048fee; margin: 2px 0px 5px 0px; font-size: 16px; }
+h4, h4 a				{ color:#048fee; margin: 1px 0px 4px 0px; font-size:12px;  }
+ul, ol 					{ list-style: none; }
+ul li 					{ line-height: 160%; padding-left: 30px; }
+ol li 					{ line-height: 180%; margin-left: 35px; }
+th 						{ font-weight: bold; padding: 5px; text-align: left; }
+fieldset 				{ border: none; padding: 10px 5px; }
+fieldset a 				{ font-weight: bold; }
+fieldset.input 			{ padding: 0px; }
+input[type="checkbox"]	{ width:14px; } 
+table					{ border:0; margin:0px; padding:0px; }
+td, div 				{ font-size: 100%; }
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"], 
+input[type="file"], 
+button 					{ padding: 1px 6px; }  
+.left 					{ float: left; }
+.right 					{ float: right; }
+.pointer 				{ cursor: pointer; }
+.main                   { width: 100%;}
+#header					{ background:url(imagesAdmin/top_bg_c.jpg) repeat-x bottom; }
+#header .div			{ background:url(imagesAdmin/top_bg_l.jpg) no-repeat left bottom; }
+#header .table			{ background:url(imagesAdmin/top_bg_r.jpg) no-repeat bottom right; width:100%; min-width:1000px; font-size:10px; font-weight:bold; }
+#header .table td		{ vertical-align:middle; }
+#header .logo			{ height:40px; padding-left:10px; color:#0a6ccf; font-size:20px; vertical-align:middle; }
+#header .left			{ height:25px; line-height:25px; text-align:left; padding-left:15px; padding-top:5px; color:#FFFFFF; font-weight:normal; }
+#header .left a			{ color:#FFFFFF; font-weight:bold; }
+#header .right			{ height:25px; line-height:25px; text-align:right; padding-right:7px; padding-top:5px; color:#1338d1; }
+#header .right a		{ color:#1338d1; }
+
+#col_left				{ background: #2276f2; text-align:center; width: 205px; max-width: 205px; vertical-align:top; }
+#col_left .tableAd		{ background:url(imagesAdmin/menu_bg.jpg) repeat-y; width: 184px; text-align:center; margin:10px 10px 0 10px; padding:0;  border: 0; border-collapse: collapse}
+#col_left .tableAd td		{ text-align:left; font-size:11px; font-weight:bold; color:#215dc6; width:168px; }
+
+#col_left .content a	{ color:#215dc6; }
+#col_left .content		{ background:#d3e2f9; width:184px; text-align:left; margin:0 10px 0 10px; }
+#col_left .content ul	{ list-style:none; padding:7px 0; }
+#col_left .content li	{ padding-left:10px; line-height:25px; font-size:11px; font-family:tahoma; }
+#col_left .content li img{ border:none; padding-right:5px; vertical-align:middle; }
+#col_left td.left		{ background:url(imagesAdmin/menu_left.jpg) top left; width:14px }
+#col_left td.right		{ background:url(imagesAdmin/menu_right.jpg) no-repeat top right; width:3px; }
+#col_left td.image		{ width:20px; cursor:pointer; }
+/*#col_left .image img	{ cursor:pointer; }*/
+#col_left .powered_by, 
+#col_left .powered_by a	{ padding:10px 0; font-size:9px; text-align:center; color:#FFFFFF; }
+
+/*Right*/
+#col_right				{ vertical-align:top; text-align:left; padding-left: 3px}
+.clearfix               { display:block;}
+.clearfix:after         { clear:both; display:block; content:"."; height:0; visibility:hidden; overflow:hidden;}
+/*Page view*/
+.PageName				{ font-weight:bold; margin:7px 0px 5px 0px; text-transform:uppercase; }
+.TableView				{ border: 1px solid #EDEDED; width: 100%; border-collapse: collapse; font-family: Arial; font-size: 12px;}
+.TableView .trHeader	{ font-weight:bold; text-align:center; background:#2276f2; color:#FFFFFF; } 
+.TableView .trHeader td	{ padding:2px 0; line-height:15px; height:24px; border: 1px solid #ddd5d5} 
+.TableView .trOdd		{ line-height:24px; background:#FFFFFF; border: 1px solid #ddd5d5 } /*d�ng le*/
+.TableView .trOdd td    { border: 1px solid #ddd5d5}
+.TableView .trEven		{ line-height:24px; background:#f5f5f5 } /*d�ng chan*/
+.TableView .tdCenter	{ text-align:center; width:30px; }
+.TableView .tdLeft		{ text-align:left; }
+.TableView .Function 	{ text-align:center; width: 130px; height:20px; }
+.TableView .Function:link 	{ padding: 2px 0 2px 0; color: #215dc6; font-size: 12px }
+.TableView .Function:active 	{ padding: 2px 0 2px 0; color: #215dc6; font-size: 12px }
+.TableView .Function input{ border:0; margin:0; padding:3px 0 0 0;  }
+.TableView .Paging		{ line-height:20px; }
+.TableView .Text		{ padding: 0 4px;min-width:140px;border-right:1px solid #ddd5d5 }
+.TableView .Multiline	{ padding:0 4px; }
+.TableView .Center		{ text-align:center; }
+.TableView .TextShort	{ width:100px; text-align:center; }
+.TableView .CheckBox	{ width:140px; text-align:center; }
+.TableView .CheckBoxsmall{ width: 80px; text-align:center;border-right:1px solid #ddd5d5 }
+.TableView .Activehead	{ width:110px; text-align: center; }
+.TableView .Date		{ width:80px; text-align: center; }
+.TableView .Image		{ width:150px; text-align: center;border-right:1px solid #ddd5d5 }
+.TableView .Time		{ width:75px; text-align: center; }
+.TableView .DateTime	{ width:165px; text-align:center; }
+.TableView .DateTimesmal{ width:110px; text-align:center;border-right:1px solid #ddd5d5 }
+.TableView .Number		{ width:80px; text-align:center; }
+.TableView .NumberM		{ width:80px; text-align:right; }
+.TableView .MoneyVND,
+.TableView .MoneyUSD	{ width:90px; text-align: right; }
+.TableView .Moneysmall	{ width:90px; text-align: center; }
+.Control				{ margin:0; padding:0; border:1px solid #99BBE8; background:#D0DEF0; height:24px; line-height:24px; }
+.Control a:link,
+.Control a:visited		{ color:#000000; font-weight:normal; text-decoration:none; }
+.Control a:hover		{ color:#000000; font-weight:normal; text-decoration:none; }
+.Control li				{ display:inline; list-style:none; padding: 0 10px 0 4px; background: url(imagesAdmin/control_li_split.gif) right no-repeat; }
+.Control .vadd			{ background: url(imagesAdmin/page_add.png) center left no-repeat; padding-left:20px; }
+.Control .vrefresh      { background: url(imagesAdmin/refresh.png) center left no-repeat; padding-left:20px; }
+.TableView .vedit	 	{ background: url(imagesAdmin/edit.png) center left no-repeat; padding: 2px 0 2px 20px; color: #215dc6; font-size: 12px}
+.TableView .views	 	{background: url(imagesAdmin/views.png) center left no-repeat; padding: 2px 0 2px 20px; color: #215dc6; font-size: 12px}
+.TableView span         { font-size: 11px; color: red}
+.Control .mulDel        { background:transparent url(imagesAdmin/delete.png) center left no-repeat; cursor:pointer; padding-left:20px; }
+.TableView .vdelete 	{ background: url(imagesAdmin/delete.png) center left no-repeat; padding: 2px 0 2px 20px; color: #215dc6; font-size: 12px }
+.TableView .vrefresh	{ background: url(imagesAdmin/refresh.png) center left no-repeat; padding: 2px 0 2px 20px; }
+.TableView .vback		{ background: url(imagesAdmin/uplevel.png) center left no-repeat; padding: 2px 0 2px 20px; }
+.checkImg   			{ background: url(imagesAdmin/check.gif) center no-repeat; width:14px; height:14px; text-indent:-9999px; display:inline-block}
+.Control .uupdate		{ background: url(imagesAdmin/page_save.png) center left no-repeat; padding: 2px 0 2px 20px; font-size: 11px; }
+.Control .uback		    { background: url(imagesAdmin/back.png) center left no-repeat; padding: 2px 0 2px 20px }
+.sortasc				{background: url(imagesAdmin/asc.gif) left no-repeat; padding: 0px 0px 0px 9px; color:#2276f2; }
+.sortdesc				{background: url(imagesAdmin/desc.gif) left no-repeat; padding: 0px 0px 0px 9px; color:#2276f2; }
+/*Page view*/
+.TableUpdate			{ width:100%; border:1px solid #EDEDED; border-collapse:collapse; text-align:left; font-family: Arial; font-size: 12px}
+.TableUpdate tr			{ line-height:20px; background:#FFFFFF }
+.TableUpdate th			{ width: 120px; padding:2px 5px; text-align:left; border: 1px solid #ddd5d5}
+.TableUpdate td			{ padding: 2px 2px; border: 1px solid #ddd5d5}
+/*.TableUpdate td p       { font-size: 11px; color: red}
+.TableUpdate td img     { border: 0; max-width: 50px; }*/
+.TableUpdate td select { border: 1px solid #ddd5d5; width: 200px; font-family: Arial; font-size: 12px}
+.TableUpdate td .yesno { border: 1px solid #ddd5d5; width: 60px; font-family: Arial; font-size: 12px}
+.TableUpdate td input[type="text"] { border: 1px solid #ddd5d5;}
+.TableUpdate .text		{ width: 400px; height: 18px; border-style: solid; border: 1px solid #ddd5d5}
+.TableUpdate .multiline	{ width:98%; height: 36px}
+.TableUpdate .image		{ width:150px; }
+.TableView .trOdd		{ line-height:24px; background:#FFFFFF; border: 1px solid #ddd5d5 } /*d�ng le*/
+.TableView .trOdd td    { border: 1px solid #ddd5d5}
+.TableView .trEven		{ line-height:24px; background:#f5f5f5 }
+.TableUpdate .number	{ width: 100px; text-align: right}
+.TableUpdate .Ord   	{ width: 30px; text-align: center}
+.TableUpdate .datetime	{ width:150px; }
+.TableUpdate .date		{ width: 150px; height: 18px; border-style: solid; border: 1px solid #ddd5d5}
+.TableUpdate .time		{ width:90px; }
+.TableUpdate .bottom	{ padding: 3px 5px; background: #f38317; border-radius: 2px; font-family: Arial; font-size: 11px; color: #0b1985; font-weight: bold; margin: 0 5px; 
+                          -moz-box-shadow: 0 0 13px rgba(0,0,0,.15); -webkit-box-shadow:0 0 13px rgba(0,0,0,.15); box-shadow: 0 0 13px rgba(0,0,0,.15)}
+.TableUpdate .bottom:hover { background: #048fee;}
+/*.TableUpdate #Link		{ display:block; }
+.TableUpdate #Content	{ display:none; }*/
+/*Style edit*/
+.editor-table{ font-size:12px; padding:10px; line-height:25px; border:1px; }
+.editor-table em{ color: Red; }
+.editor_label {font-weight:bold; width:150px; }
+.editor_field {font-weight:normal; }
+.title{ width:450px; }
+.description{ width:100%; }
+.keywords{ width:100%; height:80px; }
+
+/*Login*/
+.left_top					{ background-image: url(imagesAdmin/xpwindowleft.jpg); width: 13px; background-repeat: no-repeat; height: 30px; }
+.right_top 					{ background-position: right 50%; background-image: url(imagesAdmin/xpwindowright.jpg); width: 13px; background-repeat: no-repeat; height: 30px; }
+.top_bg 					{ font-weight: bold; font-size: 13px; background-image: url(imagesAdmin/xpwindowbg.jpg); height:30px; color: #ffffff; background-repeat: repeat-x; font-family: verdana; }
+.top_bg2 					{ font-weight: bold; padding-left:150px; font-size: 13px; background-image: url(imagesAdmin/top.jpg); background-repeat:no-repeat; border-left: #001eed 1px solid; border-right: #001eed 1px solid; width: auto; height: 70px; color: #ff3300; font-family: verdana; }
+.bottom_login				{ border-left: #001eed 1px solid; border-right: #001eed 1px solid; border-bottom: #001eed 1px solid; height: 1px; }
+.logname					{ font-size: 11px; color: #0b1985; font-family: verdana; }
+.txtbox 					{ border-right: #0b1985 1px solid; border-top: #0b1985 1px solid; text-align:left; border-left: #0b1985 1px solid; width: 250px; color: #1c2874; border-bottom: #0b1985 1px solid; height: 19px; }
+.selectbox 					{ border-right: #3854a1 1px solid; border-top: #3854a1 1px solid; border-left: #3854a1 1px solid; border-bottom: #3854a1 1px solid; font-family: verdana; font-size:12px; padding-left:10px; height: 19px; text-align:left; }
+.bg_main 					{ border-right: #001eed 1px solid; background: url(imagesAdmin/bg_login.jpg) repeat-x center bottom; padding-bottom: 10px; border-left: #001eed 1px solid; padding-top: 10px; }
+.txt3 						{ font-size: 10px; color: #0b1985; font-family: verdana; text-align:justify; }
+.buttom_image				{font-size:12px; font-weight:bold; width:100px}
+
+
+/*Hien thi bang hoa don*/
+.ViewBill           { width:97%; border:3px double #525461; line-height:22px; margin:20px auto 30px auto; padding:5px;}
+.ViewBill .title    { float:left; width:210px; margin:0 30px;}
+.ViewBill .title p  { font-weight:bold; }
+.ViewBill .info     { float:left;}
+.billdetail                 { width: 98.5%; margin: 0 auto 30px auto; border-collapse:collapse; border:1px solid #525461;}
+.billdetail tr:first-child  { background:#2a65a3; height:30px; font-size:13px; color:#fff;}
+.billdetail tr:last-child   { background:#e8e8e8}
+.billdetail th              { text-align:center;}
+.billdetail td              { text-align:center;}
+.billdetail .namePro        { width:60%; padding-left:8px; text-align:left;}
+.billdetail .totalprice     { font-weight:bold; text-align:right; font-size:13px; padding-right:60px}
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+    font-size:11px;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors{ font-weight: bold; color: #ff0000; padding:10px 0;}
+
+.validation-summary-valid{ display: none;}
+.MaskedEditFocus        { background-color: #ffffcc;color: #000000;}
+.MaskedEditMessage      { color: #ff0000; font-weight: bold;}
+.MaskedEditError        { background-color: #ffcccc;}
+.MaskedEditFocusNegative{ background-color: #ffffcc; color: #ff0000;}
+.MaskedEditBlurNegative { color: #ff0000;}
+.abc                    {background-attachment: fixed; background-repeat: repeat-x; background-position: center bottom;}
+
+.pageadmin              { height: 30px; width: 100%; font-family: Arial; font-size: 11px; text-align: center}
+.pagingContainer        { float: left; margin: 5px 0 5px 330px;}
+.pagingContainer a      { background: #f2fa8c; padding: 2px 5px; margin: 0 5px; border: 1px solid #048fee; color: #215dc6; text-decoration: none}
+.pagingContainer a:hover{ border: 1px solid red; text-decoration: none}
+.pageInfo               { float: left; padding: 0 8px;  margin: 3px 0; background: #048fee; border: 1px solid #001eed; border-radius: 2px; color: white}
+.TopSearch { width:100%; background:#D0DEF0; padding:3px 0 3px 3px;}
+.TopSearch ul li { float:left; padding-left:10px;}
