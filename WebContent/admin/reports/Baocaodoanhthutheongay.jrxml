@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-05-29T20:24:26 -->
+<!-- 2017-06-02T21:58:23 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="60a9c59f-e52d-4e52-96f1-6fde3ae8a578">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
@@ -152,7 +152,7 @@ GROUP BY CONVERT(VARCHAR,NGAYHD,103)]]>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{DD/MM/YYYY}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField pattern=" #,##0.00">
 				<reportElement x="271" y="0" width="184" height="20" uuid="1963a2e4-c7c9-43b5-8cb3-77003eb2bd29"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
@@ -182,7 +182,7 @@ GROUP BY CONVERT(VARCHAR,NGAYHD,103)]]>
 				<reportElement x="487" y="0" width="1" height="20" uuid="c61ec36c-f0fc-4f97-a941-0bc5e527d343"/>
 			</line>
 			<staticText>
-				<reportElement x="398" y="1" width="89" height="20" uuid="8a09dca5-d9c1-428f-a505-9b69314242d4"/>
+				<reportElement x="440" y="0" width="32" height="20" uuid="8a09dca5-d9c1-428f-a505-9b69314242d4"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
@@ -230,7 +230,7 @@ GROUP BY CONVERT(VARCHAR,NGAYHD,103)]]>
 				<textFieldExpression><![CDATA[$P{denngay}]]></textFieldExpression>
 			</textField>
 			<elementGroup/>
-			<textField>
+			<textField pattern=" #,##0.00">
 				<reportElement x="365" y="1" width="101" height="28" uuid="ca26f029-de88-4b5b-879a-834f1dd42089"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>

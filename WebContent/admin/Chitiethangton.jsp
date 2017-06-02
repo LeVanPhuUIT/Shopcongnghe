@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.SANPHAM_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -42,8 +44,8 @@
 				<td class="CheckBoxsmall"><%=masp %></td>
 				<td class="Text"><%=tensp %></td>
 				<td class="Text"><%=Soluongton %></td>
-				<td class="Text"><%=gia %></td>
-				<td class="Text"><%=thanhtien %></td>
+				<td class="Text"><fmt:formatNumber value="<%=gia %>" minFractionDigits="0"/> đ</td>
+				<td class="Text"><fmt:formatNumber value="<%=thanhtien %>" minFractionDigits="0"/> đ</td>
 
 			</tr>
 			<%
@@ -54,9 +56,9 @@
 			<tr class="trOdd">
 				<td class="Text"><b>Tổng</b></td>
 				<td class="Text"><b>Tổng số lượng</b></td>
-				<td class="Text"><b><%=sanpham_mod.LaySoluong() %></b></td>
+				<td class="Text"><b><fmt:formatNumber value="<%=sanpham_mod.LaySoluong() %>" minFractionDigits="0"/></b></td>
 				<td class="Text"><b>Tổng trị giá</b></td>
-				<td class="Text"><b><%=sanpham_mod.Laytrigia() %> VND</b></td>
+				<td class="Text"><b><fmt:formatNumber value="<%=sanpham_mod.Laytrigia() %>" minFractionDigits="0"/> đ</b></td>
 			</tr>
 			<td class="Control" colspan="3">
 				<ul>

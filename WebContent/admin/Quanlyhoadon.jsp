@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.HOADON_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html>
 <html>
@@ -102,7 +103,7 @@
 
 						<td class="Text"><%=tenkh %></td>
 						<td class="Text"><%= ngayhd %></td>
-						<td class="Text"><%=trigia %> Vnd</td>
+						<td class="Text"><fmt:formatNumber value="<%=trigia %>" minFractionDigits="0"/> đ</td>
 						<td class="Function"><strong> <a class="views"
 								href="Chitiethoadon.jsp?mahd=<%=mahd %>"
 								title="Xem chi tiết đơn hàng"></a>

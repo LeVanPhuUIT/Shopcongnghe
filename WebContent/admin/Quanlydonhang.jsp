@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.DONDATHANG_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html>
 <html>
@@ -107,7 +108,7 @@
 						<td class="Text"><%=tenkh %></td>
 
 						<td class="Text"><%=ngaydh %></td>
-						<td class="Text"><%= trigia %> Vnd</td>
+						<td class="Text"><fmt:formatNumber value="<%=trigia %>" minFractionDigits="0"/>    đ</td>
 						<td class="Text">
 							<% if(tinhtrang==1){out.print("Đã giao hàng");}else{ out.print("Chưa giao hàng"); }%>
 						</td>

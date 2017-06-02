@@ -3,6 +3,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.SANPHAM_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html>
 <html>
@@ -100,7 +101,7 @@
 				<td class="Image"><img src="../hinhanh/<%=hinhanh %>"
 					style="width: 90px; height: 90px; margin-top: 5px;" /></td>
 
-				<td class="Text"><%=giasp %></td>
+				<td class="Text"><fmt:formatNumber value="<%=giasp %>" minFractionDigits="0"/>đ</td>
 				<td class="Text"><%= xuatxu %></td>
 				<td class="Text"><%= donvitinh %></td>
 				<td class="Text"><%= soluong %></td>

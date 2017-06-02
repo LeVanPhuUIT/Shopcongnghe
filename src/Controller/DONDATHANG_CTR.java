@@ -58,13 +58,7 @@ public class DONDATHANG_CTR extends HttpServlet {
 		if (searchby != null) {
 			response.sendRedirect("admin/Quanlydonhang.jsp?searchby=" + searchby + "&search=" + keyword);
 		} else {
-			final THONGTINNGUOINHAN_OBJ thongtin = new THONGTINNGUOINHAN_OBJ();// Dung
-																				// de
-																				// luu
-																				// thong
-																				// tin
-																				// nguoi
-																				// nhan
+			final THONGTINNGUOINHAN_OBJ thongtin = new THONGTINNGUOINHAN_OBJ();// Dung  de luu thong tin nguoi nhan
 			DONDATHANG_MOD dondathang_mod = new DONDATHANG_MOD();
 			HttpSession session = request.getSession(true);
 			final KHACHHANG_OBJ khachhang = (KHACHHANG_OBJ) session.getAttribute("Khachhang");// Lay

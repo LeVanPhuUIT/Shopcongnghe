@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.KHUYENMAI_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -56,7 +58,7 @@
 				<td class="Text"><%=tensp %></td>
 				<td class="DateTimesmal"><%=ngaybatdau %></td>
 				<td class="DateTimesmal"><%=ngayketthuc %></td>
-				<td class="Text"><%=giakm %></td>
+				<td class="Text"><fmt:formatNumber value="<%=giakm %>" minFractionDigits="0"/>đ</td>
 
 				<td class="Function"><strong> <a class="vedit"
 						href="Suakhuyenmai.jsp?makm=<%=makm %>" title="Chỉnh sửa"></a> <input

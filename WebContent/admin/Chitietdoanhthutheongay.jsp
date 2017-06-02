@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.HOADON_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <%
 	String tungay=request.getParameter("tungay");
 	String denngay=request.getParameter("denngay");
@@ -44,7 +46,7 @@
 			<tr class="trOdd">
 
 				<td class="CheckBoxsmall"><%=ngay %></td>
-				<td class="Text"><%=doanhthu %> VND</td>
+				<td class="Text"><fmt:formatNumber value="<%=doanhthu %>" minFractionDigits="0"/> đ</td>
 			</tr>
 
 			<%
@@ -61,7 +63,7 @@
 		            							{
 		            								tong=hoadon_mod.TinhtongDoanhthu(tungay, denngay);
 		            							}
-						           				%> <b><%=tong %> VND</b>
+						           				%> <b><fmt:formatNumber value="<%=tong %>" minFractionDigits="0"/> đ</b>
 				</td>
 			</tr>
 			<tr>
