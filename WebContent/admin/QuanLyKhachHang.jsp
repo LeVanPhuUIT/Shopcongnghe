@@ -47,7 +47,7 @@
 			<div class="clearfix"></div>
 			<div class="Control">
 				<ul>
-					<li><a class="vadd" href="ThemKhachHang.jsp">Thêm mới</a></li>
+					<li><a class="vadd" href="ThemKhachHang.jsp">Thêm</a></li>
 					<li><a class="vrefresh" href="QuanLyKhachHang.jsp">Refesh</a></li>
 				</ul>
 			</div>

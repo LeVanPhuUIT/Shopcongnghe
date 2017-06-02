@@ -65,7 +65,7 @@
 					<td class="Control" colspan="3">
 						<ul>
 							<li><input type="submit" name="Thongke" value="Xem thống kê"
-								class="uupdate"></li>
+								class="uupdate" onclick="return Validate()"></li>
 							<li><input type="reset" name="lamlai" value="Làm lại"
 								class="vrefresh"></li>
 						</ul>
@@ -73,8 +73,24 @@
 				</tr>
 			</tbody>
 		</table>
-	</form> <script type="text/javascript">
+	</form> 
+	<script type="text/javascript">
             function Get(idname) { if (document.getElementById) { return document.getElementById(idname); } else if (document.all) { return document.all[idname]; } else if (document.layers) { return document.layers[idname]; } else { return null; } } function toggleXPMenu(block) { var CloseImage = "imagesAdmin/closed.gif"; var OpenImage = "imagesAdmin/open.gif"; var divid = block; var img = "img" + block; if (Get(divid).style.display == "") { Get(divid).style.display = "none"; Get(img).src = OpenImage; return false; } else { Get(divid).style.display = ""; Get(img).src = CloseImage; return false; } }
 </script>
+<script type="text/javascript">
+    function Validate() {
+    	var tuNgay = document.getElementById('tungay');
+    	var denNgay = document.getElementById('denngay');
+    	
+        if (tuNgay.getTime()>denNgay.getTime()){
+        	alert("Ngày trước phải nhỏ hơn hoặc bằng ngày sau");
+            return false;
+            }
+        else{
+            return true;
+        }
+    }
+
+    </script>
 	</body>
 </html>

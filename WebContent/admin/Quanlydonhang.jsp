@@ -115,10 +115,15 @@
 						<td class="Function"><strong>
 						<a class="views"
 								href="Chitietdonhang.jsp?madh=<%=madh %>"
-								title="Xem chi tiết đơn hàng">
-						</a> <a class="vdelete"
+								title="Duyệt đơn hàng">
+								
+						</a> 
+						<a href="Chitietdonhang.jsp?madh=<%=madh %>" style="color:blue;">Duyệt</a>
+						<a class="vdelete"
 								href="../Dathang.do?madh=<%=madh %>" title="Hủy đơn hàng"
-								onclick="DeleteConfirm()"></a>
+								onclick="DeleteConfirm()">
+						</a>
+						<a href="../Dathang.do?madh=<%=madh %>" " style="color:red;">Hủy</a>
 						</strong></td>
 					</tr>
 					<%

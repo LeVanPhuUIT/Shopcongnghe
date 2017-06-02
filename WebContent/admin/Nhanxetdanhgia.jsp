@@ -7,6 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Nhận xét đánh giá khách hàng</title>
+<style type="text/css">
+.phantrang {
+	color: red;
+}
+</style>
 <jsp:include page="AdminIndex.jsp" />
 
 <!-- Dòng viết code ở đây -->
@@ -64,6 +69,7 @@
 						value="xoa" name="key"> <a class="vdelete"
 						href="../Danhgia.do?madg=<%=dsDG.getString(5) %>" title="Xóa"
 						onclick="DeleteConfirm()"></a>
+				<a href="../Danhgia.do?madg=<%=dsDG.getString(5) %>" style="color:red;" onclick="DeleteConfirm()">Xóa</a>
 				</strong></td>
 			</tr>
 			<%
@@ -74,15 +80,34 @@
 		</td>
 		</tr>
 	</table> <!--Code phân trang-->
+	
 	<div class="pagingContainer">
 		<b color="white">Trang : </b>
 		<%
+                String phantrang="";
+                int pageCurent=0;
+                if(request.getParameter("page")==null){
+                	pageCurent=1;
+                }
+                else{
+                	pageCurent=Integer.parseInt(request.getParameter("page"));
+                }
                 int n=danhgia_mod.tinhSotrang(10);
                 for(int i=1;i<=n;i++)
-                {
+                { 
+                	if(i==pageCurent)
+                	{
+                
                 	%>
-		<a href="../Nhanxetdanhgia?p=<%=i %>"><b><%=i %></b></a>
+		<a href="../Nhanxetdanhgia?p=<%=i %>"><b class="phantrang"><%=i %></b></a>
 		<%
+                	}
+                	else{
+                		
+                		%>
+		<a href="../Nhanxetdanhgia?page=<%=i %>"><b class=">"><%=i %></b></a>
+		<%
+                	}
                 }
                 %>
 	</div> <!-- cod phân trang -->

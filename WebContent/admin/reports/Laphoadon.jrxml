@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-05-29T19:05:06 -->
+<!-- 2017-06-03T00:26:38 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Laphoadon" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="afccd73d-5c88-4cd5-b9c0-a3c9c6a457ee">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
@@ -289,7 +289,7 @@
 			<line>
 				<reportElement x="436" y="-1" width="1" height="31" uuid="a98c61d4-4f5e-4aed-b6c1-b3288689dee5"/>
 			</line>
-			<textField>
+			<textField pattern=" #,##0">
 				<reportElement x="281" y="1" width="86" height="30" uuid="4c11b07f-5a1d-4105-9a86-5ea37af41b0a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
@@ -303,7 +303,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{SOLUONG}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField pattern=" #,##0">
 				<reportElement x="437" y="0" width="108" height="30" uuid="1e6ec9a0-4d03-439d-a81e-c1a807984e7a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>

@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.HOADON_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -79,7 +81,7 @@
 				<td class="Text"><%=tensp %></td>
 				<td class="Text"><%=soluong %></td>
 				<td class="Text"><%=dongia %> Vnd</td>
-				<td class="Text"><%=thanhtien %> Vnd</td>
+				<td class="Text"><fmt:formatNumber value="<%=thanhtien %>" minFractionDigits="0"/> đ</td>
 			</tr>
 			<%
 		            								}
@@ -87,7 +89,7 @@
 						                    %>
 			<tr class="trOdd">
 				<td class="Text" colspan="4"><b>Số tiền thanh toán :</b></td>
-				<td class="Text"><b> <%=trigia %> Vnd
+				<td class="Text"><b><fmt:formatNumber value="<%=trigia %>" minFractionDigits="0"/> đ
 				</b></td>
 			</tr>
 			<tr>

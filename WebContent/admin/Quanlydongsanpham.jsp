@@ -17,7 +17,7 @@
 		<div class="clearfix"></div>
 		<div class="Control">
 			<ul>
-				<li><a class="vadd" href="Themdongsanpham.jsp">Thêm mới</a></li>
+				<li><a class="vadd" href="Themdongsanpham.jsp">Thêm</a></li>
 				<li><a class="vrefresh" href="Quanlydongsanpham.jsp">Refesh</a></li>
 			</ul>
 		</div>
@@ -55,12 +55,17 @@
 						                        	  %>
 				</td>
 
-				<td class="Function"><strong> <a class="vedit"
+				<td class="Function"><strong> 
+				<a class="vedit"
 						href="Suadongsanpham.jsp?madongsp=<%=madongsp %>"
-						title="Chỉnh sửa"></a> <input type="hidden" value="xoa" name="key">
-						<a class="vdelete"
+						title="Chỉnh sửa">
+				</a> 
+				<a href="Suadongsanpham.jsp?madongsp=<%=madongsp %>" style="color:blue;">Sửa</a>
+						<input type="hidden" value="xoa" name="key">
+				<a class="vdelete"
 						href="../Dongsanpham.do?madongsp=<%=madongsp %>" title="Xóa"
 						onclick="DeleteConfirm()"></a>
+				<a href="../Dongsanpham.do?madongsp=<%=madongsp %>" style="color:red;" onclick="DeleteConfirm()">Xóa</a>						
 				</strong></td>
 			</tr>
 			<%

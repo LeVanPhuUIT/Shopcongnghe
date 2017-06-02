@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="Model.SANPHAM_MOD"%>
 <%@ page import="java.sql.ResultSet"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <%
 	int thang=5;
 	int nam=2014;
@@ -58,7 +60,7 @@
 
 				<td class="CheckBoxsmall"><%=masp %></td>
 				<td class="Text"><%=tensp %></td>
-				<td class="Text"><%=gia %></td>
+				<td class="Text"><fmt:formatNumber value="<%=gia %>" minFractionDigits="0"/> đ</td>
 				<td class="Text"><%=xuatxu %></td>
 				<td class="Text"><%=Soluongban %></td>
 

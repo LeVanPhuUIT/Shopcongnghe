@@ -19,7 +19,7 @@
 		<div class="clearfix"></div>
 		<div class="Control">
 			<ul>
-				<li><a class="vadd" href="Themkhuyenmai.jsp">Thêm mới</a></li>
+				<li><a class="vadd" href="Themkhuyenmai.jsp">Thêm</a></li>
 				<li><a class="vrefresh" href="Quanlykhuyenmai.jsp">Refesh</a></li>
 			</ul>
 		</div>
@@ -59,12 +59,18 @@
 				<td class="DateTimesmal"><%=ngaybatdau %></td>
 				<td class="DateTimesmal"><%=ngayketthuc %></td>
 				<td class="Text"><fmt:formatNumber value="<%=giakm %>" minFractionDigits="0"/>đ</td>
-
-				<td class="Function"><strong> <a class="vedit"
-						href="Suakhuyenmai.jsp?makm=<%=makm %>" title="Chỉnh sửa"></a> <input
-						type="hidden" value="xoa" name="key"> <a class="vdelete"
+				
+				<td class="Function"><strong> 
+				<a class="vedit"
+						href="Suakhuyenmai.jsp?makm=<%=makm %>"
+						title="Chỉnh sửa">
+				</a> 
+				<a href="Suakhuyenmai.jsp?makm=<%=makm %>" style="color:blue;">Sửa</a>
+						<input type="hidden" value="xoa" name="key">
+				<a class="vdelete"
 						href="../Khuyenmai.do?makm=<%=makm %>" title="Xóa"
 						onclick="DeleteConfirm()"></a>
+				<a href="../Khuyenmai.do?makm=<%=makm %>" style="color:red;" onclick="DeleteConfirm()">Xóa</a>						
 				</strong></td>
 			</tr>
 			<%

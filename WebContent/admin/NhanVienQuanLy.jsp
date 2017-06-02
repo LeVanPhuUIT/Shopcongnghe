@@ -37,7 +37,7 @@
 			<div class="clearfix"></div>
 			<div class="Control">
 				<ul>
-					<li><a class="vadd" href="NhanVienThemMoi.jsp">Thêm mới</a></li>
+					<li><a class="vadd" href="NhanVienThemMoi.jsp">Thêm</a></li>
 					<li><a class="vrefresh" href="NhanVienQuanLy.jsp">Refesh</a></li>
 				</ul>
 			</div>
@@ -133,9 +133,9 @@
 								value=<%=rs.getString(1)%> style="display: none">
 							<!-- value=3: Sửa -->
 							<input type="submit" value="Sửa" id="hanhdong" name="hanhdong"
-								class="vedit" title="Chỉnh sửa">
+								class="vedit" title="Chỉnh sửa" style ="color:blue">
 							<!-- value=4: Xóa -->
-							<input type="submit" value="Xóa" id="hanhdong" name="hanhdong"
+							<input style ="color:red" type="submit" value="Xóa" id="hanhdong" name="hanhdong"
 								class="vdelete" title="Xóa" onclick="return DeleteConfirm();">
 						</form>
 					</td>

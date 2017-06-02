@@ -47,7 +47,7 @@
 		<div class="clearfix"></div>
 		<div class="Control">
 			<ul>
-				<li><a class="vadd" href="ThemSanpham.jsp">Thêm mới</a></li>
+				<li><a class="vadd" href="ThemSanpham.jsp">Thêm</a></li>
 				<li><a class="vrefresh" href="Quanlysanpham.jsp">Refesh</a></li>
 			</ul>
 		</div>
@@ -106,11 +106,13 @@
 				<td class="Text"><%= donvitinh %></td>
 				<td class="Text"><%= soluong %></td>
 				
-				<td class="Function"><strong> <a class="vedit"
-						href="SuaSanpham.jsp?masp=<%=masp %>" title="Chỉnh sửa"></a> <input
-						type="hidden" value="xoa" name="key"> <a class="vdelete"
-						href="../Sanpham.do?masp=<%=masp %>" title="Xóa"
-						onclick="return DeleteConfirm()"></a>
+				<td class="Function">
+				<strong> <a class="vedit"
+						href="SuaSanpham.jsp?masp=<%=masp %>" title="Chỉnh sửa"></a>
+						<a href="SuaSanpham.jsp?masp=<%=masp %>" style="color:blue;">Sửa</a>
+						 <input type="hidden" value="xoa" name="key"> 
+						<a class="vdelete" href="../Sanpham.do?masp=<%=masp %>" title="Xóa" onclick="return DeleteConfirm()"></a>
+						<a href="../Sanpham.do?masp=<%=masp %>" onclick="return DeleteConfirm()" style="color:red;">Xóa</a>
 				</strong></td>
 			</tr>
 			<%

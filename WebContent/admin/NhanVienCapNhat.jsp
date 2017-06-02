@@ -82,10 +82,9 @@
 					</tr>
 					<tr>
 						<th>Giới tính:</th>
-						<td>
-							<input id="male" name="ckGioiTinhKH"
+						<td><input id="male" name="ckGioiTinhNV"
 							type="radio" value="male">Nam
-							<input id="female" name="ckGioiTinhKH"
+							<input id="female" name="ckGioiTinhNV"
 							type="radio" value="female">Nữ
 						</td>
 					</tr>

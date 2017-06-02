@@ -100,10 +100,10 @@ public class NHANVIEN_CTR extends HttpServlet {
 		//hotennv = new String(byteshotennv, StandardCharsets.UTF_8);
 		String ngaysinhnv = request.getParameter("date");
 		String gioitinhnv = "";
-		if (request.getParameter("chkgioitinhnv") == "1") {
+		if (request.getParameter("ckGioiTinhNV").equals("male")) {
 			gioitinhnv = "1";
 		} 
-		else if(request.getParameter("chkgioitinhnv") == "2"){
+		else if(request.getParameter("ckGioiTinhNV").equals("female")){
 			gioitinhnv = "2";
 		}
 		else{
@@ -132,8 +132,11 @@ public class NHANVIEN_CTR extends HttpServlet {
 		String gioitinhnv = "";
 		if (request.getParameter("chkgioitinhnv") == null) {
 			gioitinhnv = "0";
-		} else {
+		} else if (request.getParameter("ckGioiTinhNV").equals("male")){
 			gioitinhnv = "1";
+		}
+		else{
+			gioitinhnv = "2";
 		}
 		//byte[] bytesgioitinhnv = gioitinhnv.getBytes(StandardCharsets.ISO_8859_1);
 		//gioitinhnv = new String(bytesgioitinhnv, StandardCharsets.UTF_8);
