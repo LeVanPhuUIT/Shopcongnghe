@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-02T22:02:19 -->
+<!-- 2017-06-02T22:08:36 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="60a9c59f-e52d-4e52-96f1-6fde3ae8a578">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
@@ -230,7 +230,7 @@ GROUP BY CONVERT(VARCHAR,NGAYHD,103)]]>
 				<textFieldExpression><![CDATA[$P{denngay}]]></textFieldExpression>
 			</textField>
 			<elementGroup/>
-			<textField pattern=" #,##0.00">
+			<textField pattern=": #,##0.00">
 				<reportElement x="365" y="1" width="101" height="28" uuid="ca26f029-de88-4b5b-879a-834f1dd42089"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
@@ -272,6 +272,13 @@ GROUP BY CONVERT(VARCHAR,NGAYHD,103)]]>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Nguoilap}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="460" y="5" width="32" height="20" uuid="4df9b601-6dc8-436b-b1a4-edfc47923f7e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[VND]]></text>
+			</staticText>
 		</band>
 	</summary>
 </jasperReport>
