@@ -36,7 +36,7 @@
             									String masp=dsSP.getString("MASP");
             									String tensp=dsSP.getString("TENSP");
             									int gia=dsSP.getInt("GIASP");
-            									int thanhtien=dsSP.getInt("THANHTIEN");
+            									long thanhtien=dsSP.getLong("THANHTIEN");
             									int Soluongton=dsSP.getInt("SOLUONG");
             						%>
 			<tr class="trOdd">

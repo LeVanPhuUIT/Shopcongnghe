@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-05-16T17:45:38 -->
+<!-- 2017-06-02T22:59:47 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Thongkehangton" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="92c24fae-9a99-42a0-9dc7-094b83c78424">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
@@ -153,68 +153,68 @@ ORDER BY MASP ASC]]>
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="26" splitType="Stretch">
+		<band height="41" splitType="Stretch">
 			<line>
-				<reportElement x="1" y="25" width="554" height="1" uuid="e67d62b0-f8dd-4125-9d49-cc0587c938fd"/>
+				<reportElement x="0" y="40" width="555" height="1" uuid="e67d62b0-f8dd-4125-9d49-cc0587c938fd"/>
 			</line>
 			<line>
-				<reportElement x="555" y="-2" width="1" height="28" uuid="90eea566-b8ba-4d91-94db-08841a068dfd"/>
+				<reportElement x="555" y="-2" width="1" height="42" uuid="90eea566-b8ba-4d91-94db-08841a068dfd"/>
 			</line>
 			<line>
-				<reportElement x="0" y="0" width="1" height="26" uuid="fee1b22a-a8ed-4dd3-841a-d29dabd556bc"/>
+				<reportElement x="0" y="0" width="1" height="41" uuid="fee1b22a-a8ed-4dd3-841a-d29dabd556bc"/>
 			</line>
 			<line>
-				<reportElement x="39" y="-1" width="1" height="26" uuid="0698b31e-b04e-4b62-9f7a-1850223da085"/>
+				<reportElement x="39" y="-1" width="1" height="41" uuid="0698b31e-b04e-4b62-9f7a-1850223da085"/>
 			</line>
 			<line>
-				<reportElement x="132" y="0" width="1" height="25" uuid="bc96e77c-d842-4076-b46d-e1f403d6da0d"/>
+				<reportElement x="132" y="0" width="1" height="41" uuid="bc96e77c-d842-4076-b46d-e1f403d6da0d"/>
 			</line>
 			<line>
-				<reportElement x="254" y="0" width="1" height="25" uuid="fd365e8d-952d-4634-97a0-e4444b5584b1"/>
+				<reportElement x="254" y="0" width="1" height="40" uuid="fd365e8d-952d-4634-97a0-e4444b5584b1"/>
 			</line>
 			<line>
-				<reportElement x="350" y="-1" width="1" height="26" uuid="2345523c-4e6b-4884-b965-227724b671b5"/>
+				<reportElement x="350" y="-1" width="1" height="41" uuid="2345523c-4e6b-4884-b965-227724b671b5"/>
 			</line>
 			<line>
-				<reportElement x="442" y="0" width="1" height="25" uuid="2c296f83-85ac-40e7-ae2f-7aeef65cd881"/>
+				<reportElement x="442" y="0" width="1" height="41" uuid="2c296f83-85ac-40e7-ae2f-7aeef65cd881"/>
 			</line>
 			<textField>
-				<reportElement x="41" y="2" width="92" height="24" uuid="6092749f-8a86-4913-939c-137f75a173f9"/>
+				<reportElement x="39" y="2" width="93" height="38" uuid="6092749f-8a86-4913-939c-137f75a173f9"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{MASP}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="134" y="1" width="121" height="25" uuid="4258374c-7ba4-4b36-8c9d-4ce90f525188"/>
+				<reportElement x="134" y="1" width="121" height="39" uuid="4258374c-7ba4-4b36-8c9d-4ce90f525188"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{TENSP}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="257" y="2" width="94" height="24" uuid="3f9899c4-7c98-41df-8779-a824a47539b6"/>
+				<reportElement x="256" y="2" width="94" height="38" uuid="3f9899c4-7c98-41df-8779-a824a47539b6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{SOLUONG}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="353" y="1" width="90" height="25" uuid="5dec9990-b6ca-4e11-8266-232ec36a41f7"/>
+			<textField pattern=" #,##0">
+				<reportElement x="353" y="1" width="89" height="39" uuid="5dec9990-b6ca-4e11-8266-232ec36a41f7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{GIASP}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="442" y="1" width="112" height="25" uuid="13cf95d4-f6d3-4364-ba15-eafd120c3a91"/>
+			<textField pattern=" #,##0">
+				<reportElement x="442" y="1" width="112" height="39" uuid="13cf95d4-f6d3-4364-ba15-eafd120c3a91"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{THANHTIEN}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="2" y="2" width="38" height="24" uuid="7e224733-b5f8-41e6-949d-05e8f1534a32"/>
+				<reportElement x="0" y="0" width="38" height="40" uuid="7e224733-b5f8-41e6-949d-05e8f1534a32"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
@@ -237,7 +237,7 @@ ORDER BY MASP ASC]]>
 		</band>
 	</pageFooter>
 	<summary>
-		<band height="213" splitType="Stretch">
+		<band height="217" splitType="Stretch">
 			<line>
 				<reportElement x="0" y="37" width="556" height="1" uuid="1eeb4488-1c52-43f7-a5da-1486441cbe6c"/>
 			</line>
@@ -247,13 +247,6 @@ ORDER BY MASP ASC]]>
 			<line>
 				<reportElement x="0" y="0" width="1" height="38" uuid="e3c586a4-a6f9-4ea4-b1af-bbf8d2f84998"/>
 			</line>
-			<textField>
-				<reportElement x="2" y="0" width="552" height="37" uuid="ddcc6cf9-b334-44d7-8e11-f462b69b4d7b"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="13" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Số lượng sản phẩm còn lại trong kho là "+ $V{TongSL}+" với tổng trị giá : "+$V{Trigia}+ " VND"]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="386" y="58" width="147" height="20" uuid="b0e5905e-4d10-4884-82de-f18a4a64a8f2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -274,6 +267,41 @@ ORDER BY MASP ASC]]>
 					<font fontName="Times New Roman" size="13"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Nguoilap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="10" width="239" height="36" uuid="c072f248-35ec-41cd-a999-80fde4a57c67"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số lượng sản phẩm còn lại trong kho là: "]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="238" y="10" width="82" height="36" uuid="9fc4f47c-abc8-4035-a5c4-8937f0e8038f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{TongSL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="10" width="110" height="36" uuid="5577278c-5f76-46e7-8d09-b4ca5f8d981d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["với tổng trị giá : "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="511" y="10" width="50" height="29" uuid="fef25b44-54ba-4b5c-8f4a-4fd0e6d5daa2"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["VND"]]></textFieldExpression>
+			</textField>
+			<textField pattern=" #,##0">
+				<reportElement x="420" y="10" width="108" height="36" uuid="a781e34c-236c-4772-91aa-b66a174080b2"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Trigia}]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
