@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-02T21:58:23 -->
+<!-- 2017-06-02T22:02:19 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="60a9c59f-e52d-4e52-96f1-6fde3ae8a578">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
@@ -235,7 +235,7 @@ GROUP BY CONVERT(VARCHAR,NGAYHD,103)]]>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[" : "+$V{Tong}+" VND"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$V{Tong}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="261" y="1" width="64" height="27" uuid="175d62b1-20da-4cc7-9619-bc56f19ee2e1"/>
