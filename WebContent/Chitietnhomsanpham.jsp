@@ -4,6 +4,7 @@
 <%@ page import="java.sql.ResultSet"%>
 <%@ page import="Model.NHOMSANPHAM_MOD"%>
 <%@ page import="Model.DONGSANPHAM_MOD"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <jsp:include page="header.jsp"></jsp:include>
 <%
@@ -102,7 +103,7 @@ SANPHAM_MOD sanpham_mod=new SANPHAM_MOD();
 														href="chitietsanpham.jsp?masp=<%=masp%>"
 														style="width: 250px;"><%=tensp %></a> <a
 														href="chitietsanpham.jsp?masp=<%=masp%>"
-														style="width: 250px; color: red; font-size: 20px; font-family: OpenSans-Bold">Giá:<%=giasp %></a>
+														style="width: 250px; color: red; font-size: 20px; font-family: OpenSans-Bold">Giá:<fmt:formatNumber value="<%=giasp %>" minFractionDigits="0"/>đ</a>
 												</div>
 											</div>
 										</div>

@@ -115,7 +115,7 @@
 																{
 															%>
 																<div class="sell-price">
-																	Khuyến mãi :<%=giakm %>
+																	Khuyến mãi :<fmt:formatNumber value="<%=giakm %>" minFractionDigits="0"/>
 																	<sup>vnđ</sup>
 																</div>
 																<%
