@@ -14,6 +14,7 @@ THONGTINNGUOINHAN_OBJ thongtin=(THONGTINNGUOINHAN_OBJ)session.getAttribute("Thon
 DONDATHANG_MOD dondathang=new DONDATHANG_MOD();
 %>
 <div id="breadcrumb_background"></div>
+<div id="breadcrumb_background"></div>
 <div id="body-wrapper">
 	<div id="outer-wrapper">
 		<div id="wrap2">
